@@ -1,15 +1,16 @@
+
 const RestaurantCard =(props) =>{
     const { resData } =props;
     const{
      cloudinaryImageId,
      name,cuisines,avgRating,costForTwo,
      deliveryTime
-    } =resData?.data;
+    } =resData?.info;
      return(
           <div className="res-card">
              <img  className="res-logo" alt="img"
              src={
-                 "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+                 "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
                   cloudinaryImageId    
              }/>
                 <h3>{name}</h3>
@@ -19,5 +20,16 @@ const RestaurantCard =(props) =>{
                 <h5>{deliveryTime}minutes</h5>
           </div>
      )
+ };
+
+ export const isOpened = (RestaurantCard) =>{
+    return(props) =>{
+        return(
+            <div>
+                <label>Opened</label>
+                <RestaurantCard  {...props}/>
+            </div>
+        )
+    }
  };
 export default RestaurantCard;

@@ -44,3 +44,65 @@ ul {
     flex-wrap:wrap;
     margin:9px;
 }
+
+.search{
+    display:flex;
+    margin:0px 20px;
+}
+
+.user-card{
+    padding :5px;
+    margin:5px;
+    border:1px solid blue;
+}
+.restaurant-menu{
+    display :flex;
+    justify-content:center;
+}
+
+.accordion-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.accordion {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.item-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.item-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
